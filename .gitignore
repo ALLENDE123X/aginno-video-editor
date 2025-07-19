@@ -41,3 +41,4 @@ api/.env.local
 api/.env.*
 !api/.env.example
 aginno-video-editor-f2f3436ef570.json
+*.mp4
