@@ -1,0 +1,44 @@
+{
+  "name": "aginno-video-indexer-api",
+  "version": "1.0.0",
+  "description": "Video indexing engine for Aginno Video Editor",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "test": "jest",
+    "test-db": "tsx scripts/test_db.ts",
+    "test-e2e": "tsx scripts/test_end_to_end.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.845.0",
+    "@google-cloud/aiplatform": "^4.3.0",
+    "@google-cloud/vision": "^5.3.0",
+    "@supabase/supabase-js": "^2.39.8",
+    "@types/axios": "^0.9.36",
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.36.0",
+    "pg": "^8.11.3",
+    "uuid": "^9.0.1",
+    "winston": "^3.12.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.23",
+    "@types/fluent-ffmpeg": "^2.1.24",
+    "@types/multer": "^1.4.13",
+    "@types/node": "^20.11.30",
+    "@types/pg": "^8.10.9",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2"
+  }
+}
